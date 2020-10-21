@@ -23,7 +23,7 @@ module ReverseMarkdown
       end
 
       def treat_text(node)
-        text = node.text
+        text = node.inner_html
         text = preserve_nbsp(text)
         text = remove_border_newlines(text)
         text = remove_inner_newlines(text)
